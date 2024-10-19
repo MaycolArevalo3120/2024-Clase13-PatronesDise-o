@@ -5,6 +5,7 @@
 package pkg2024.clse13.patronesdediseño;
 
 import pkg2024.clse13.patronesdediseño.decorador.Bebida;
+import pkg2024.clse13.patronesdediseño.decorador.Cocoa;
 import pkg2024.clse13.patronesdediseño.decorador.CremaChatilli;
 import pkg2024.clse13.patronesdediseño.decorador.Expresso;
 import pkg2024.clse13.patronesdediseño.decorador.HouseBlend;
@@ -47,6 +48,8 @@ public class Clse13PatronesDeDiseño {
         
         System.out.println(expresso.getDescripcion()+ " Precio: GTQ "+ expresso.precio());
         expresso  =  new CremaChatilli(expresso);
+        System.out.println(expresso.getDescripcion()+ " Precio: GTQ "+ expresso.precio());
+        expresso  =  new Cocoa(expresso);
         System.out.println(expresso.getDescripcion()+ " Precio: GTQ "+ expresso.precio());
     }
     
